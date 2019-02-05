@@ -14,7 +14,7 @@ class Network(nn.Module):
             hidden_layers: list of integers, the sizes of the hidden layers
         
         '''
-        super().__init__()
+        super(Network,self).__init__()
         # Input to a hidden layer
         self.hidden_layers = nn.ModuleList([nn.Linear(input_size, hidden_layers[0])])
         
